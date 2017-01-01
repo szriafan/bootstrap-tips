@@ -13,4 +13,13 @@ $(function() {
       console.log('你点击了确定按钮');
     })
   });
+
+  App.initValidator();
+  $('#loginModal').validate({
+    submitHandler: function(form) {
+      setTimeout(function() {
+        $(form).modal('hide');
+      }, 1000)
+    }
+  });
 });
