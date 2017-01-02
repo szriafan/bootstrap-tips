@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="css/libs/bs-forms.css">
   <link rel="stylesheet" href="css/libs/bs-buttons.css">
   <link rel="stylesheet" href="css/libs/bs-modal.css">
+  <link rel="stylesheet" href="css/libs/bs-buttons.css">
+  <link rel="stylesheet" href="css/libs/bs-dropdown.css">
+  <link rel="stylesheet" href="css/libs/bs-select.css">
   <link rel="stylesheet" href="css/libs/utilities.css">
   <!-- endbuild -->
 </head>
@@ -25,11 +28,36 @@
       <div class="modal-content"></div>
     </div>
   </form>
+  <h2>下拉菜单</h2>
+  <div class="col-sm-3 col-md-2">
+    <div class="row dropdown">
+      <button type="button" class="btn btn-default dropdown-toggle form-control" id="dropdownTitle"
+        data-toggle="dropdown" title="">
+        <span data-bind="label">请选择</span>&nbsp;<span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownTitle">
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">JavaScript</a>
+        </li>
+        <li role="presentation" selected>
+          <a role="menuitem" tabindex="-1" href="#">Flash</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1" href="#">Ajax</a>
+        </li>
+        <li role="presentation">
+          <a role="menuitem" tabindex="-1"
+            href="#">Silverlight</a>
+        </li>
+      </ul>
+    </div>
+  </div>
   <!-- build:js js/index.min.js -->
   <script src="js/libs/jquery.js"></script>
   <script src="js/libs/bs-modal.js"></script>
   <script src="js/libs/bs-confirm.js"></script>
   <script src="js/libs/bs-alert.js"></script>
+  <script src="js/libs/bs-dropdown.js"></script>
   <script src="js/libs/jquery.validate.js"></script>
   <script src="js/libs/jquery.validate.messages_zh.js"></script>
   <script src="js/common.js"></script>
